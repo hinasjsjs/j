@@ -4,8 +4,8 @@ from telebot import types
 from user_agent import generate_user_agent
 import logging
 from config import *
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-SUDO = int(os.environ.get("SUDO","5359109940"))
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5596614242:AAHN_Ob2lnFR_dh9jE8Z1uNIHGFv9UVNtx8")
+SUDO = int(os.environ.get("SUDO","5359109940,1041483862,1983379011"))
 Heroku = os.environ.get("HEROKU", "APP-NAME")
 APP_URL = "https://"+ Heroku +".herokuapp.com/" + BOT_TOKEN
 from flask import Flask, request
@@ -42,6 +42,7 @@ def start(message):
 		rr = types.InlineKeyboardMarkup(row_width=2)
 		me = types.InlineKeyboardButton(text="مجهول",url="https://t.me/k_8_u")
 		he = types.InlineKeyboardButton(text="حلم",url="https://t.me/e_e_2")
+                my = types.InlineKeyboardButton(text="دراكون",url="https://t.me/ACCCCT") 
 		ch = types.InlineKeyboardButton(text="▶ قناة البوت ◀",url="https://t.me/c_p_8")
 		rr.add(me,he,ch)
 		bot.send_message(message.chat.id,text="هذا البوت مدفوع وليس لك\n للتفعيل راسل",reply_markup=rr)
